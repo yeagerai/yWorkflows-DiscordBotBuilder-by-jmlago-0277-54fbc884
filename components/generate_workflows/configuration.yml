@@ -1,0 +1,5 @@
+description: The GenerateWorkflows component iterates over the user-defined slash
+  commands, invoking WorkflowCreator.transform(args, callbacks) with the workflow
+  description as args for each command.
+name: GenerateWorkflows
+parameters: {}
