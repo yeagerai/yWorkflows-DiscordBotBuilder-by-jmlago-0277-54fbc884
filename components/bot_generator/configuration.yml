@@ -4,6 +4,8 @@ description: 'The BotGenerator component utilizes GPT-4 to generate the bot.py f
   (text) Output: - Source Code: (Generated bot.py)
 
   '
+input-class: BotGeneratorInputDict
 name: BotGenerator
+output-class: BotGeneratorOutputDict
 parameters:
   master_prompt: ''
