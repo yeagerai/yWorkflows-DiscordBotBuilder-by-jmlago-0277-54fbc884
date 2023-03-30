@@ -1,0 +1,9 @@
+description: 'The BotGenerator component utilizes GPT-4 to generate the bot.py file
+  containing the Discord bot''s source code. It takes a master_prompt parameter to
+  assist with code creation. Total it has one input and one output: Input: - master_prompt
+  (text) Output: - Source Code: (Generated bot.py)
+
+  '
+name: BotGenerator
+parameters:
+  master_prompt: ''
