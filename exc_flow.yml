@@ -1,0 +1,29 @@
+yaml
+components:
+  node-0:
+    class: BotGenerator
+    module-path: components/bot_generator/bot_generator.py
+    configuration: !include components/bot_generator/configuration.yml
+  node-1:
+    class: GenerateWorkflows
+    module-path: components/generate_workflows/generate_workflows.py
+    configuration: !include components/generate_workflows/configuration.yml
+  node-2:
+    class: CreateSlashCommands
+    module-path: components/create_slash_commands/create_slash_commands.py
+    configuration: !include components/create_slash_commands/configuration.yml
+
+flow-matrix:
+  [
+    [0, 1, 0],
+    [0, 0, 1],
+    [0, 0, 0],
+  ]
+
+mapper:
+  node-0.BotGenerator.MasterPrompt: args.MasterPrompt
+
+  node-1.GenerateWorkflows.Commands: args.Commands
+
+  node-2.CreateSlashCommands.MasterPrompt: args.MasterPrompt
+  node-2.CreateSlashCommands.GeneratedWorkflows: node-1.GenerateWorkflows.ListGeneratedWorkflows
