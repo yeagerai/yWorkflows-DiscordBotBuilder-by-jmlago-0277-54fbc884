@@ -1,0 +1,6 @@
+description: The CreateSlashCommands component employs GPT-4 and a master_prompt parameter
+  to generate the commands.py file containing the slash commands as discord.py functions,
+  where each function calls the corresponding workflow's transform function.
+name: CreateSlashCommands
+parameters:
+  master_prompt: ''
