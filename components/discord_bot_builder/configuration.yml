@@ -1,0 +1,8 @@
+description: This Yeager Component focuses on creating a customizable Discord Bot
+  application,  including the bot.py file (Discord Bot Source Code) and the commands.py
+  file  (Slash Commands as discord.py Functions) from a list of provided Slash Commands
+  and descriptions.  The component processes the input list of Slash Commands and
+  descriptions,  generating the necessary Python files for a fully functional Discord
+  Bot,  ready to be deployed and integrated with the Discord platform.
+name: DiscordBotBuilder
+parameters: {}
