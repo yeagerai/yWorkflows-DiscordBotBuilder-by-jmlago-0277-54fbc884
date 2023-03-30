@@ -4,5 +4,7 @@ description: This Yeager Component focuses on creating a customizable Discord Bo
   and descriptions.  The component processes the input list of Slash Commands and
   descriptions,  generating the necessary Python files for a fully functional Discord
   Bot,  ready to be deployed and integrated with the Discord platform.
+input-class: SlashCommand
 name: DiscordBotBuilder
+output-class: DiscordBotBuilderIn
 parameters: {}
