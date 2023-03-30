@@ -1,0 +1,9 @@
+python
+# Content of requirements.txt
+fastapi
+pydantic
+openai
+typing
+os
+yaml
+dotenv
